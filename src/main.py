@@ -994,7 +994,7 @@ elif st.session_state.page == 1:
                 st.session_state.validity = True
                 # check to have 'Next' button or not to navigate to get flight details based on the decision
                 if st.session_state[
-                    'recommendation'] is 'The weather looks good! It is recommended to visit this place.':
+                    'recommendation'] == 'The weather looks good! It is recommended to visit this place.':
                     st.session_state.navigation = True
 # showing the flight details page
 elif st.session_state.page == 2:
